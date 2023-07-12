@@ -26,19 +26,17 @@
       href="https://cdn.maptiler.com/maptiler-geocoding-control/v0.0.96/style.css"
       rel="stylesheet"
     />
-    <style>
-      /* body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-      }
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      } */
-    </style>
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.umd.js"></script>
+    <link
+      href="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <title>React App</title>
   </head>
   <body>
@@ -46,23 +44,5 @@
     <div id="root">
       <div id="map"></div>
     </div>
-    <!-- Add MapTiler initialization script -->
-    <script>
-      // maptilersdk.config.apiKey = "YOUR_MAPTILER_API_KEY_HERE";
-
-      // const map = (window.map = new maptilersdk.Map({
-      //   container: "map", // container's id or the HTML element to render the map
-      //   style: maptilersdk.MapStyle.STREETS, // stylesheet location
-      //   zoom: 3,
-      //   center: [-94.77, 38.57],
-      // }));
-
-      // const gc = new maptilersdkMaptilerGeocoder.GeocodingControl({
-      //   apiKey: "bUNkGxzojTZOBuCGooQ2",
-      //   maptilersdk: maptilersdk,
-      // });
-
-      // map.addControl(gc, "top-left");
-    </script>
   </body>
 </html>
